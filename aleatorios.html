@@ -1,0 +1,107 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleatórios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://mrwallpaper.com/images/hd/link-wallpaper-hd-xtbdlela2drdan0i.jpg') no-repeat center center fixed; /* Fundo de anime */
+            background-size: cover;
+            color: #fff;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .countdown {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function updateCountdown() {
+            const newYear = new Date('January 1, 2025 00:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = newYear - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').innerHTML = 
+                days + "d " + 
+                hours + "h " + 
+                minutes + "m " + 
+                seconds + "s ";
+
+            if (distance < 0) {
+                document.getElementById('countdown').innerHTML = "Feliz Ano Novo!";
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Aleatórios</h1>
+    </header>
+    <nav>
+        <a href="home.html">Páginas</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="buy.html">Comprar</a>
+        <a href="aleatorios.html">Aleatórios</a>
+    </nav>
+    <div class="container">
+        <h2>Conteúdo Aleatório</h2>
+        <p>Aqui você encontrará uma seleção de conteúdo variado e interessante relacionado à banda Soja.</p>
+        
+        <div class="countdown">
+            <h2>Contador Regressivo para o Ano Novo</h2>
+            <p id="countdown">132d 0h 24m 4s </p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Soja Music Videos. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body></html>

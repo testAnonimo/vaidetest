@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soja Music Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .logout-button {
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 0 15px;
+            text-transform: uppercase;
+        }
+        .logout-button:hover {
+            background-color: #c9302c;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .video-item {
+            width: calc(25% - 20px);
+            box-sizing: border-box;
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Soja Music Videos</h1>
+    </header>
+    <nav>
+        <a href="home.html">Páginas</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="buy.html">Comprar</a>
+        <a href="aleatorios.html">Aleatórios</a>
+        <button class="logout-button" onclick="window.location.href='register.html';">Logout</button>
+    </nav>
+    <div class="container">
+        <div class="video-grid">
+            <!-- Vídeos do YouTube -->
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/L_jWHffIx5E" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/6f6JcWqk88E" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/2v5mW8kJ9L4" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/5Qk9c08F3go" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/4fU0U2X7pD8" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/U1ZWaYj4xS4" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Soja Music Videos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
